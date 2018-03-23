@@ -1,0 +1,70 @@
+#for_whome
+    padding: 90px 0
+    width: 100%
+    background-image url(../img/for_bg.jpg)
+    background-position center
+    background-size cover
+    background-repeat no-repeat
+.reason_img
+    width: 98px
+    height 98px
+    margin: 0 auto
+    background-image url(../img/icons.png)
+    background-repeat: no-repeat
+
+.reason
+    p
+        font-size: 18px;
+        font-family: "GeometriaBold", sans-serif;
+        color: rgb(0, 30, 48);
+        line-height: 1.333;
+        text-align: center;
+        span
+            font-family: "Geometria", sans-serif;
+        &:before
+            content: ''
+            display block
+            width: 56px
+            height 4px
+            margin: 16px auto 15px
+            background-color: #edb712
+
+.row_first 
+    margin-bottom: 53px
+    .reason
+        &:first-child
+            .reason_img
+                background-position 0 0
+        &:nth-child(2)
+            .reason_img
+                background-position -98px 0
+        &:nth-child(3)
+            .reason_img
+                background-position -294px 0
+        &:nth-child(4)
+            .reason_img
+                background-position -196px 0
+.row_second 
+    margin-bottom: 53px
+    .reason
+        &:first-child
+            .reason_img
+                background-position -392px 0
+        &:nth-child(2)
+            .reason_img
+                background-position 0  -98px
+        &:nth-child(3)
+            .reason_img
+                background-position -98px -98px
+        &:nth-child(4)
+            .reason_img
+                background-position -196px -98px
+.row_third
+    margin-bottom: 53px
+    .reason
+        &:nth-child(2)
+            .reason_img
+                background-position -294px  -98px
+        &:nth-child(3)
+            .reason_img
+                background-position -392px -98px
