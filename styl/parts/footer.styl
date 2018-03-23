@@ -54,11 +54,28 @@
 				background-color: #FFBA0C
 				transition: all .3s ease
 .modal-content
-	background: rgb(22,21,17)
-	background-image: radial-gradient( 50% 50%, circle closest-side, rgb(41,41,41) 0%, rgb(22,21,17) 100%);
-	border 3px solid pr_red
+	background-color: #116576
+	background-image: -moz-linear-gradient( 176deg, rgb(0,74,92) 0%, rgb(41,149,165) 50%, rgb(0,67,85) 100%);
 	text-align center
 	padding 20px
+.modal-wrapper
+	padding: 10px
+	border 2px dashed #e1a20a
+	h4
+		font-family: "GeometriaBold" sans-serif
+		font-size: 24px
+		color: #fff
+	p
+		font-size: 18px;
+		font-family: "Geometria", sans-serif;
+		color: #fff
+		line-height: 1.2;
+		text-align center
+		margin-top: 0
+		margin-bottom: 20px
+		&.conf
+			font-size: 12px
+			margin: 15px auto 0
 	.form_newsletter
 		display: block
 		height auto
@@ -67,20 +84,17 @@
 			margin-bottom: 10px
 		p
 			font-size: 28px;
-			font-family: "RobotoRegular", sans-serif;
-			color: pr_red
-			line-height: 1.2;
-			text-align center
-			margin-top: 0
-			margin-bottom: 20px
 		.infront_submit,
 		.span_phone
 			font-size: 18px
 			margin-bottom 20px
 			color: #fff
 		.email-block input,
-		.phone-block input
-			margin 0 0 20px
+		.phone-block input,
+		.email-block input:focus,
+		.phone-block input:focus
+			margin 0 auto 20px
+			width: 359px
 	.close
 		position absolute
 		border 0
@@ -89,8 +103,8 @@
 		height 20px
 		font-size 20px
 		line-height 22px
-		right 20px
-		top 20px
+		right: 36px;
+		top: 36px;
 		z-index 999
 		padding: 0;
 		text-align: center;
@@ -99,3 +113,10 @@
 			color: #fff
 			border: 1px solid #eee
 			line-height 20px
+.conf
+	color: #eee;
+	text-align: center;
+	font-size: 12px
+	margin: 15px auto 0;
+	cursor: pointer;
+	width: 200px;
